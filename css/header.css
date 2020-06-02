@@ -1,0 +1,97 @@
+header {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 50px;
+  z-index: 10;
+}
+
+.menu a {
+  margin-left: 40px;
+  color: black;
+}
+
+.burger-menu {
+  display: none;
+  z-index: 10;
+}
+
+.burger-menu .menu-items {
+  display: none;
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  padding: 75px 30px 30px 30px;
+  top: 0;
+  left: 0;
+  background-color: white;
+}
+
+.events .burger-menu .menu-items {
+  background-color: var(--pink);
+}
+
+.aquaport .burger-menu .menu-items {
+  background-color: var(--yellow);
+}
+
+.index .burger-menu .menu-items {
+  background-color: var(--red);
+}
+
+.checklist .burger-menu .menu-items {
+  background-color: var(--light-blue);
+}
+
+.burger-menu .menu-items a {
+  font-size: 40px;
+  display: block;
+  margin-bottom: 50px;
+}
+
+.burger-menu .menu-items.show {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-icon>img {
+  height: 26px;
+}
+
+.close-icon {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  z-index: 5;
+}
+
+.close-icon>img {
+  height: 30px;
+}
+
+@media (max-width: 1024px) {
+  header {
+    padding: 20px 30px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+}
+
+@media (max-width: 475px) {
+  header {
+    padding: 15px 20px;
+  }
+
+  .burger-menu .menu-items a {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+}
