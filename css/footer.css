@@ -1,0 +1,37 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 50px;
+  font-family: 'Proxima Nova';
+  font-size: 18px;
+  line-height: 130%;
+  z-index: 10;
+}
+
+footer>div {
+  flex: 1;
+}
+
+.footer__adress {
+  text-align: right;
+}
+
+@media (max-width: 767px) {
+  footer {
+    padding: 15px 30px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 550px) {
+  footer {
+    flex-direction: column;
+    padding: 15px 20px;
+  }
+
+  .footer__adress,
+  .footer__name {
+    text-align: center;
+  }
+}
