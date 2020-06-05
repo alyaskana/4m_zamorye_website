@@ -1,0 +1,121 @@
+body.events {
+  background: var(--pink);
+}
+
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 60px 0 50px;
+}
+
+.filter__item {
+  margin-bottom: 25px;
+  margin-right: 40px;
+  padding: 12px 34px 11px;
+  border: 2px solid black;
+  border-radius: 50px;
+  font-size: 24px;
+  text-align: center;
+  white-space: nowrap;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.filter__item:last-child {
+  margin-right: 0;
+}
+
+.filter__item.indian.active {
+  background-color: var(--yellow);
+}
+
+.filter__item.south.active {
+  background-color: var(--red);
+}
+
+.filter__item.silent.active {
+  background-color: var(--blue);
+  color: white;
+}
+
+.filter__item.atlantic.active {
+  background-color: var(--green);
+}
+
+.filter__item.sevled.active {
+  background-color: var(--light-blue);
+}
+
+.posters {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -38px;
+}
+
+.poster {
+  flex: 0 1 calc((100% - 228px)/3);
+  margin: 0 38px 90px;
+}
+
+.date-time {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  font-size: 30px;
+}
+
+.img img {
+  width: 100%;
+}
+
+.title {
+  font-size: 25px;
+  margin: 20px 0 15px;
+  line-height: 130%;
+}
+
+.tag {
+  font-size: 20px;
+}
+
+@media (max-width: 1023px) {
+  .filter__item {
+    margin-bottom: 20px;
+    margin-right: 30px;
+    padding: 10px 24px 9px;
+    border: 2px solid black;
+    border-radius: 50px;
+    font-size: 18px;
+  }
+
+  .date-time {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .title {
+    font-size: 18px;
+    margin: 15px 0 10px;
+  }
+
+  .tag {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .posters {
+    margin: 0 -30px;
+  }
+
+  .poster {
+    flex: 0 1 calc((100% - 120px)/2);
+    margin: 0 30px 90px;
+  }
+}
+
+@media (max-width: 479px) {
+  .poster {
+    flex: auto;
+  }
+}
