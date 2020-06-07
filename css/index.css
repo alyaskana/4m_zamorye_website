@@ -1,0 +1,120 @@
+/* QUIZ */
+
+.quiz {
+  width: 100%;
+  position: relative;
+}
+
+.quiz__title {
+  margin: 70px auto 0;
+  text-align: center;
+  font-size: 60px;
+}
+
+.quiz__coral {
+  display: block;
+  width: 650px;
+  margin: 80px auto 0;
+}
+
+.quiz__item {
+  padding: 16px 40px 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.-font-big {
+  font-size: 70px;
+}
+
+.-font-medium {
+  font-size: 60px;
+}
+
+.-font-small {
+  font-size: 50px;
+}
+
+.quiz__item.-green {
+  background-color: var(--green);
+  color: white;
+}
+
+.quiz__item.-pink {
+  background-color: var(--pink);
+}
+
+.quiz__item.-blue {
+  background-color: var(--blue);
+  color: white;
+}
+
+.quiz__fist-step,
+.quiz__second-step {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.quiz__second-step {
+  display: none;
+}
+
+.quiz__second-step a {
+  color: black;
+}
+
+.quiz__fist-step__family {
+  top: calc(60%/524*100);
+  left: calc(196%/1440*100);
+  white-space: nowrap;
+  transform: rotate(20deg);
+}
+
+.quiz__fist-step__group {
+  top: calc(45%/524*100);
+  left: calc(750%/1440*100);
+  transform: rotate(4deg);
+}
+
+.quiz__fist-step__one {
+  top: calc(322%/524*100);
+  left: calc(409%/1440*100);
+  transform: rotate(-12deg);
+}
+
+.quiz__second-step__excursions {
+  top: calc(-10%/524*100);
+  left: calc(355%/1440*100);
+  transform: rotate(-5deg);
+}
+
+.quiz__second-step__extreme {
+  top: calc(200%/524*100);
+  left: calc(110%/1440*100);
+  transform: rotate(8deg);
+}
+
+.quiz__second-step__warm {
+  top: calc(400%/524*100);
+  left: calc(180%/1440*100);
+  transform: rotate(-7deg);
+}
+
+.quiz__second-step__watching {
+  top: calc(336%/524*100);
+  left: calc(727%/1440*100);
+  transform: rotate(15deg);
+}
+
+.quiz__second-step__eating {
+  top: calc(75%/524*100);
+  left: calc(790%/1440*100);
+  transform: rotate(-8deg);
+}
+

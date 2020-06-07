@@ -21,3 +21,18 @@ filterButtons.forEach(element => {
     })
   })
 });
+// --------------- QUIZ ----------------
+let firstStepBtns = document.querySelectorAll('.quiz__fist-step .quiz__item')
+firstStepBtns.forEach(firstStepBtn => {
+  firstStepBtn.addEventListener('click', () => {
+    document.querySelector('.quiz__fist-step').style.display = 'none'
+    document.querySelector('.quiz__second-step').style.display = 'block'
+  })
+})
+
+let secondStepBtns = document.querySelectorAll('.quiz__second-step .quiz__item')
+secondStepBtns.forEach(secondStepBtn => {
+  secondStepBtn.addEventListener('click', (event) => {
+    document.querySelector(event.target.getAttribute("href") + ' .oceans__selector__item__title').click()
+  })
+})
