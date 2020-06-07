@@ -4,3 +4,34 @@
 @import "footer.css";
 @import "events.css";
 @import "index.css";
+
+:root {
+  --blue: #3263BF;
+  --red: #F64445;
+  --light-blue: #83D0FB;
+  --pink: #FDD0E3;
+  --green: #4FB25B;
+  --yellow: #FFD749;
+}
+
+body {
+  font-family: "Transgender";
+  color: black;
+  overflow-x: hidden;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+.content {
+  margin: 0 50px;
+}
