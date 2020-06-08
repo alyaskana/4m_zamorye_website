@@ -45,3 +45,37 @@ body.checklist {
 .-blue {
   background-color: var(--blue);
 }
+
+@media (max-width: 1024px) {
+  .checklist__content__item__text-box__text {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .checklist__content__item__text-box {
+    padding: 20px;
+  }
+
+  .checklist__content__item__text-box__text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 479px) {
+  .checklist__content__item {
+    flex-direction: column;
+  }
+
+  .checklist__content__item.-reversed {
+    flex-direction: column-reverse;
+  }
+
+  .checklist__content__item__text-box {
+    padding: 70px 20px;
+  }
+
+  .checklist__content__item__text-box__text {
+    font-size: 16px;
+  }
+}
