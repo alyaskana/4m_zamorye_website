@@ -1,0 +1,45 @@
+body.checklist {
+  background-color: var(--light-blue);
+}
+
+.checklist__content__item {
+  display: flex;
+}
+
+.checklist__content__item__text-box {
+  display: flex;
+  flex: 1 1 50%;
+}
+
+.checklist__content__item__text-box__text {
+  font-size: 36px;
+  max-width: 300px;
+}
+
+.checklist__content__item__img-box {
+  flex: 1 1 50%;
+}
+
+.checklist__content__item__img-box__img {
+  width: 100%;
+}
+
+.-red {
+  background-color: var(--red);
+}
+
+.-yellow {
+  background-color: var(--yellow);
+}
+
+.-pink {
+  background-color: var(--pink);
+}
+
+.-green {
+  background-color: var(--green);
+}
+
+.-blue {
+  background-color: var(--blue);
+}
