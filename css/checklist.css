@@ -9,11 +9,13 @@ body.checklist {
 .checklist__content__item__text-box {
   display: flex;
   flex: 1 1 50%;
+  align-items: center;
+  padding: 0 50px;
 }
 
 .checklist__content__item__text-box__text {
   font-size: 36px;
-  max-width: 300px;
+  max-width: 600px;
 }
 
 .checklist__content__item__img-box {
