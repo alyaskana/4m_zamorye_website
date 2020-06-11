@@ -21,6 +21,26 @@ filterButtons.forEach(element => {
     })
   })
 });
+
+// ------------------ AQUAPORT ----------------
+let iconBtns = document.querySelectorAll('.icon')
+iconBtns.forEach(icon => {
+  icon.addEventListener('click', event => {
+    document.querySelectorAll('.popup').forEach(popup => {
+      popup.style.display = 'none'
+    })
+    let popup = document.querySelector('.popup.' + event.target.dataset.btn)
+    popup.style.display = 'block'
+  })
+})
+let closeBtns = document.querySelectorAll('.popup__head__close')
+closeBtns.forEach(closeBtn => {
+  closeBtn.addEventListener('click', event => {
+    document.querySelectorAll('.popup').forEach(popup => {
+      popup.style.display = 'none'
+    })
+  })
+})
 // --------------- QUIZ ----------------
 let firstStepBtns = document.querySelectorAll('.quiz__fist-step .quiz__item')
 firstStepBtns.forEach(firstStepBtn => {
