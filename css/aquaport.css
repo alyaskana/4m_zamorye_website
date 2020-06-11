@@ -154,3 +154,55 @@ body.aquaport {
 .green .popup__head__title {
   color: var(--green);
 }
+
+@media (max-width: 1024px) {
+  .description {
+    padding: 50px 30px;
+  }
+
+  .description__content h1 {
+    font-size: 33px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 630px) {
+  .description {
+    padding: 35px 30px 50px;
+  }
+
+  .description__content h1 {
+    font-size: 28px;
+  }
+
+  .description__content p {
+    font-size: 16px;
+  }
+
+  .popup {
+    width: calc(100% - 20px);
+    padding: 15px;
+  }
+
+  .popup__head {
+    margin-bottom: 10px;
+  }
+
+  .popup__head__title {
+    font-size: 22px;
+    padding-bottom: 5px;
+  }
+
+  .popup__head__close img {
+    height: 30px;
+  }
+
+  .popup__text {
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+
+  .popup__img img {
+    width: 100%;
+  }
+}
