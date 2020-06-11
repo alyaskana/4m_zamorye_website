@@ -18,7 +18,7 @@ body.aquaport {
 }
 
 .description__content p {
-  font-family: 'Proxima Nova';
+  font-family: "Proxima Nova";
   font-size: 18px;
 }
 
@@ -36,40 +36,40 @@ body.aquaport {
   position: absolute;
   top: 0;
   left: 0;
-  width: calc(70%/1440*100);
-  height: calc(70%/1006*100);
-  border-radius: calc(5px/70*100);
+  width: calc(70% / 1440 * 100);
+  height: calc(70% / 1006 * 100);
+  border-radius: calc(5px / 70 * 100);
   cursor: pointer;
 }
 
 .icon.yellow {
   background-color: var(--yellow);
-  top: calc(133%/1006*100);
-  left: calc(687%/1440*100);
+  top: calc(133% / 1006 * 100);
+  left: calc(687% / 1440 * 100);
 }
 
 .icon.red {
   background-color: var(--red);
-  top: calc(469%/1006*100);
-  left: calc(686%/1440*100);
+  top: calc(469% / 1006 * 100);
+  left: calc(686% / 1440 * 100);
 }
 
 .icon.blue {
   background-color: var(--blue);
-  top: calc(637%/1006*100);
-  left: calc(921%/1440*100);
+  top: calc(637% / 1006 * 100);
+  left: calc(921% / 1440 * 100);
 }
 
 .icon.light-blue {
   background-color: var(--light-blue);
-  top: calc(460%/1006*100);
-  left: calc(981%/1440*100);
+  top: calc(460% / 1006 * 100);
+  left: calc(981% / 1440 * 100);
 }
 
 .icon.green {
   background-color: var(--green);
-  top: calc(303%/1006*100);
-  left: calc(926%/1440*100);
+  top: calc(303% / 1006 * 100);
+  left: calc(926% / 1440 * 100);
 }
 
 .popup {
@@ -104,7 +104,7 @@ body.aquaport {
 
 .popup__text {
   max-width: 550px;
-  font-family: 'Proxima Nova';
+  font-family: "Proxima Nova";
   color: #222222;
   line-height: 130%;
   font-size: 18px;
