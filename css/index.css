@@ -1,3 +1,15 @@
+body.index {
+  background-color: var(--red);
+}
+
+/* STAR POPUP */
+.wrapper__star-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /* QUIZ */
 
 .quiz {
@@ -6,7 +18,7 @@
 }
 
 .quiz__title {
-  margin: 70px auto 0;
+  margin: 20px auto 0;
   text-align: center;
   font-size: 60px;
 }
@@ -70,51 +82,51 @@
 }
 
 .quiz__fist-step__family {
-  top: calc(60%/524*100);
-  left: calc(196%/1440*100);
+  top: calc(50% / 524 * 100);
+  left: calc(190% / 1440 * 100);
   white-space: nowrap;
   transform: rotate(20deg);
 }
 
 .quiz__fist-step__group {
-  top: calc(45%/524*100);
-  left: calc(750%/1440*100);
-  transform: rotate(4deg);
+  top: calc(25% / 524 * 100);
+  left: calc(450% / 1440 * 100);
+  transform: rotate(11deg);
 }
 
 .quiz__fist-step__one {
-  top: calc(322%/524*100);
-  left: calc(409%/1440*100);
-  transform: rotate(-12deg);
+  top: calc(320% / 524 * 100);
+  left: calc(411% / 1440 * 100);
+  transform: rotate(-22deg);
 }
 
 .quiz__second-step__excursions {
-  top: calc(-10%/524*100);
-  left: calc(355%/1440*100);
-  transform: rotate(-5deg);
+  top: calc(-12% / 524 * 100);
+  left: calc(350% / 1440 * 100);
+  transform: rotate(-20deg);
 }
 
 .quiz__second-step__extreme {
-  top: calc(200%/524*100);
-  left: calc(110%/1440*100);
-  transform: rotate(8deg);
+  top: calc(209% / 524 * 100);
+  left: calc(111% / 1440 * 100);
+  transform: rotate(20deg);
 }
 
 .quiz__second-step__warm {
-  top: calc(400%/524*100);
-  left: calc(180%/1440*100);
-  transform: rotate(-7deg);
+  top: calc(445% / 524 * 100);
+  left: calc(165% / 1440 * 100);
+  transform: rotate(-10deg);
 }
 
 .quiz__second-step__watching {
-  top: calc(336%/524*100);
-  left: calc(727%/1440*100);
+  top: calc(336% / 524 * 100);
+  left: calc(727% / 1440 * 100);
   transform: rotate(15deg);
 }
 
 .quiz__second-step__eating {
-  top: calc(75%/524*100);
-  left: calc(790%/1440*100);
+  top: calc(75% / 524 * 100);
+  left: calc(790% / 1440 * 100);
   transform: rotate(-8deg);
 }
 
