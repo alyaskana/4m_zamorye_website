@@ -37,3 +37,15 @@ a:visited {
 .content {
   margin: 0 50px;
 }
+
+@media (max-width: 1023px) {
+  .content {
+    margin: 0 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .content {
+    margin: 0 20px;
+  }
+}
