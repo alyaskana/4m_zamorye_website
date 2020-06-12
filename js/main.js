@@ -1,3 +1,21 @@
+// ------------------- BURGER MENU ---------------
+const menuBtn = document.querySelector('.js-menu-btn')
+const closeBtn = document.querySelector('.js-close-btn')
+const menuContent = document.querySelector('.js-menu-content')
+
+menuBtn.addEventListener('click', () => {
+  menuContent.classList.add('show')
+  document.querySelector('body').style.overflow = 'hidden'
+  menuBtn.style.display = 'none'
+  closeBtn.style.display = 'block'
+})
+closeBtn.addEventListener('click', () => {
+  menuContent.classList.remove('show')
+  document.querySelector('body').style.overflow = 'auto'
+  menuBtn.style.display = 'block'
+  closeBtn.style.display = 'none'
+})
+
 // --------------------- EVENTS ---------------
 let filterButtons = document.querySelectorAll('.filter__item')
 filterButtons.forEach(element => {
