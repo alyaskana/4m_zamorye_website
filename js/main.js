@@ -59,6 +59,17 @@ closeBtns.forEach(closeBtn => {
     })
   })
 })
+
+// OCEANS MENU
+let selectBtns = document.querySelectorAll('.oceans__selector__item__title')
+selectBtns.forEach(btn => {
+  btn.addEventListener('click', event => {
+    document.querySelectorAll('.oceans__selector__item').forEach(elem => {
+      elem.classList.remove('show')
+    })
+    event.target.parentElement.classList.add('show')
+  })
+})
 // --------------- QUIZ ----------------
 let firstStepBtns = document.querySelectorAll('.quiz__fist-step .quiz__item')
 firstStepBtns.forEach(firstStepBtn => {

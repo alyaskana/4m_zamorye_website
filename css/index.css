@@ -82,40 +82,40 @@ body.index {
 }
 
 .quiz__fist-step__family {
-  top: calc(50% / 524 * 100);
-  left: calc(190% / 1440 * 100);
+  top: calc(60% / 524 * 100);
+  left: calc(196% / 1440 * 100);
   white-space: nowrap;
   transform: rotate(20deg);
 }
 
 .quiz__fist-step__group {
-  top: calc(25% / 524 * 100);
-  left: calc(450% / 1440 * 100);
-  transform: rotate(11deg);
+  top: calc(45% / 524 * 100);
+  left: calc(750% / 1440 * 100);
+  transform: rotate(4deg);
 }
 
 .quiz__fist-step__one {
-  top: calc(320% / 524 * 100);
-  left: calc(411% / 1440 * 100);
-  transform: rotate(-22deg);
+  top: calc(322% / 524 * 100);
+  left: calc(409% / 1440 * 100);
+  transform: rotate(-12deg);
 }
 
 .quiz__second-step__excursions {
-  top: calc(-12% / 524 * 100);
-  left: calc(350% / 1440 * 100);
-  transform: rotate(-20deg);
+  top: calc(-10% / 524 * 100);
+  left: calc(355% / 1440 * 100);
+  transform: rotate(-5deg);
 }
 
 .quiz__second-step__extreme {
-  top: calc(209% / 524 * 100);
-  left: calc(111% / 1440 * 100);
-  transform: rotate(20deg);
+  top: calc(200% / 524 * 100);
+  left: calc(110% / 1440 * 100);
+  transform: rotate(8deg);
 }
 
 .quiz__second-step__warm {
-  top: calc(445% / 524 * 100);
-  left: calc(165% / 1440 * 100);
-  transform: rotate(-10deg);
+  top: calc(400% / 524 * 100);
+  left: calc(180% / 1440 * 100);
+  transform: rotate(-7deg);
 }
 
 .quiz__second-step__watching {
@@ -130,3 +130,79 @@ body.index {
   transform: rotate(-8deg);
 }
 
+/* OCEANS */
+.oceans {
+  margin-top: 100px;
+  width: 100%;
+}
+
+.oceans__selector__item {
+  font-size: 80px;
+  border-top: 4px solid white;
+  color: white;
+  padding: 10px 50px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.oceans__selector__sevled {
+  border-bottom: 4px solid white;
+}
+
+.oceans__selector__atlantic:hover {
+  background-color: var(--light-blue);
+}
+
+.oceans__selector__indian:hover {
+  background-color: var(--yellow);
+}
+
+.oceans__selector__silent:hover {
+  background-color: var(--blue);
+}
+
+.oceans__selector__south:hover {
+  background-color: var(--pink);
+}
+
+.oceans__selector__sevled:hover {
+  background-color: var(--green);
+}
+
+.oceans__selector__item.show:hover {
+  background-color: transparent;
+}
+
+.oceans__selector__item__content {
+  display: none;
+  padding: 25px 0 50px;
+}
+
+.oceans__selector__item.show .oceans__selector__item__content {
+  display: flex;
+}
+
+.oceans__selector__item__content__img {
+  max-width: 600px;
+}
+
+.oceans__selector__item__content__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 70px 0 0 50px;
+}
+
+.oceans__selector__item__content__description__text {
+  font-size: 30px;
+  max-width: 650px;
+  line-height: 120%;
+}
+
+.oceans__selector__item__content__description__btn {
+  font-size: 40px;
+  padding: 24px 55px 28px;
+  border: 4px solid white;
+  width: fit-content;
+  color: white;
+}
