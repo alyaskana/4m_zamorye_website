@@ -60,6 +60,14 @@ closeBtns.forEach(closeBtn => {
   })
 })
 
+// ------------------ ROUTES ---------------
+// FORM INPUT WIDTH
+document.querySelectorAll('.form__input').forEach(input => {
+  autosizeInput(input, {
+    minWidth: true
+  })
+})
+
 // OCEANS MENU
 let selectBtns = document.querySelectorAll('.oceans__selector__item__title')
 selectBtns.forEach(btn => {
@@ -70,6 +78,20 @@ selectBtns.forEach(btn => {
     event.target.parentElement.classList.add('show')
   })
 })
+
+// BTN FILL INPUT
+let goBtns = document.querySelectorAll('.oceans__selector__item__content__description__btn')
+goBtns.forEach(goBtn => {
+  goBtn.addEventListener('click', event => {
+    let oceanName = event.target.dataset.ocean
+    let oceanInput = document.querySelector('.form__input__destination')
+    oceanInput.value = oceanName
+
+    const inputEvent = new Event('input');
+    oceanInput.dispatchEvent(inputEvent);
+  })
+})
+
 // --------------- QUIZ ----------------
 let firstStepBtns = document.querySelectorAll('.quiz__fist-step .quiz__item')
 firstStepBtns.forEach(firstStepBtn => {
