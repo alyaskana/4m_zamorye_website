@@ -323,3 +323,172 @@ body.index {
     margin: 15px 0 0 20px;
   }
 }
+
+@media (max-width: 767px) {
+  .star-popup__content {
+    top: 58%;
+  }
+
+  .star-popup__content__title {
+    font-size: 24px;
+    padding-bottom: 20px;
+  }
+
+  .star-popup__content__text {
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
+
+  .star-popup__content__btn {
+    font-size: 20px;
+    padding: 8px 20px 10px;
+    border-radius: 5px;
+  }
+
+  .quiz__title {
+    font-size: 40px;
+  }
+
+  .quiz__coral {
+    width: 90vw;
+  }
+
+  .quiz__item {
+    padding: 12px 25px 16px;
+  }
+
+  .-font-big {
+    font-size: 45px;
+  }
+
+  .-font-medium {
+    font-size: 35px;
+  }
+
+  .-font-small {
+    font-size: 25px;
+  }
+
+  .quiz__fist-step__group {
+    top: calc(-15% / 524 * 100);
+    left: calc(630% / 1440 * 100);
+  }
+
+  .quiz__fist-step__one {
+    top: calc(380% / 524 * 100);
+    left: calc(370% / 1440 * 100);
+  }
+
+  .quiz__second-step .quiz__item {
+    font-size: 25px;
+  }
+
+  .quiz__second-step__excursions {
+    top: calc(-30% / 524 * 100);
+    left: calc(135% / 1440 * 100);
+  }
+
+  .quiz__second-step__warm {
+    top: calc(460% / 524 * 100);
+    left: calc(150% / 1440 * 100);
+  }
+
+  .quiz__second-step__watching {
+    top: calc(336% / 524 * 100);
+    left: calc(657% / 1440 * 100);
+  }
+
+  .oceans__selector__item {
+    font-size: 40px;
+    padding: 10px 30px 15px;
+  }
+
+  .form {
+    margin: 70px 20px;
+    font-size: 20px;
+  }
+
+  .form__paragraph {
+    margin-top: 30px;
+  }
+
+  .form__input {
+    font-size: 20px;
+    margin: 15px 0 0 20px;
+  }
+
+  .form__btn {
+    margin-top: 70px;
+    font-size: 20px;
+    padding: 15px 30px;
+  }
+}
+
+@media (max-width: 479px) {
+  .star-popup__content__title {
+    font-size: 18px;
+    padding-bottom: 15px;
+  }
+
+  .star-popup__content__text {
+    display: none;
+  }
+
+  .quiz__title {
+    font-size: 24px;
+    margin: 50px auto 0;
+  }
+
+  .quiz__second-step .quiz__item {
+    font-size: 16px;
+  }
+
+  .quiz__item {
+    padding: 10px 20px 12px;
+  }
+
+  .-font-medium {
+    font-size: 25px;
+  }
+
+  .oceans__selector__item {
+    font-size: 26px;
+    padding: 10px 20px 15px;
+    border-top: 3px solid white;
+  }
+
+  .oceans__selector__sevled {
+    border-bottom: 3px solid white;
+  }
+
+  .form__paragraph {
+    font-size: 18px;
+  }
+
+  .form__input {
+    font-size: 18px;
+    margin: 15px 0 0 0;
+    padding: 7px 20px 9px;
+  }
+}
+
+@media (max-width: 479px) {
+  .oceans__selector__item__content {
+    padding: 25px 0 10px;
+  }
+
+  .oceans__selector__item__content__description {
+    padding: 20px 0 0 0;
+  }
+
+  .oceans__selector__item__content__description__text {
+    font-size: 20px;
+    padding-bottom: 30px;
+  }
+
+  .oceans__selector__item__content__description__btn {
+    font-size: 20px;
+    padding: 12px 25px 10px;
+    border: 2px solid white;
+  }
+}
