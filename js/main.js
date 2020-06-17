@@ -107,3 +107,18 @@ secondStepBtns.forEach(secondStepBtn => {
     document.querySelector(event.target.getAttribute("href") + ' .oceans__selector__item__title').click()
   })
 })
+
+// ------------- PROMO GAME --------------
+let playBtns = document.querySelectorAll('.js-play-btn')
+playBtns.forEach(playBtn => {
+  playBtn.addEventListener('click', () => {
+    document.querySelector('.wrapper__promo__popup').style.display = 'none'
+    startGame = true
+  })
+})
+
+// ------------ STAR POPUP ----------------
+let skipBtn = document.querySelector('.star-popup__content__skip')
+skipBtn.addEventListener('click', () => {
+  document.querySelector('.wrapper__star-popup').style.display = 'none'
+})

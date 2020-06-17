@@ -10,6 +10,56 @@ body.index {
   transform: translate(-50%, -50%);
 }
 
+.star-popup {
+  position: relative;
+}
+
+.star-popup__img {
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+.star-popup__content {
+  position: absolute;
+  max-width: 400px;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.star-popup__content__title {
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 25px;
+}
+
+.star-popup__content__text {
+  font-family: "Proxima Nova";
+  font-size: 24px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.star-popup__content__btn {
+  display: block;
+  width: fit-content;
+  background-color: var(--red);
+  border-radius: 10px;
+  padding: 12px 30px 14px;
+  margin: 0 auto 10px;
+  color: white;
+  font-size: 27px;
+  cursor: pointer;
+}
+
+.star-popup__content__skip {
+  font-family: "Proxima Nova";
+  font-size: 16px;
+  text-align: center;
+  color: #424242;
+  cursor: pointer;
+}
+
 /* QUIZ */
 
 .quiz {
