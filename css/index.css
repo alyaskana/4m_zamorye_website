@@ -435,6 +435,7 @@ body.index {
   font-size: 26px;
   text-align: center;
   padding-bottom: 20px;
+  line-height: 120%;
 }
 
 .form__popup__close {
@@ -614,6 +615,10 @@ body.index {
     font-size: 20px;
     padding: 15px 30px;
   }
+
+  .form__popup__title {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 479px) {
@@ -662,9 +667,11 @@ body.index {
     margin: 15px 0 0 0;
     padding: 7px 20px 9px;
   }
-}
 
-@media (max-width: 479px) {
+  .form__popup__title {
+    font-size: 16px;
+  }
+
   .oceans__selector__item__content {
     padding: 25px 0 10px;
   }
