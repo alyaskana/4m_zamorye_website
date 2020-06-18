@@ -94,14 +94,18 @@ goBtns.forEach(goBtn => {
 
 // BTN SUCCESS POPUP
 let sendRequestBtn = document.querySelector('.form__btn')
-sendRequestBtn.addEventListener('click', () => {
-  document.querySelector('.form__popup').style.display = 'block'
-})
+if (sendRequestBtn) {
+  sendRequestBtn.addEventListener('click', () => {
+    document.querySelector('.form__popup').style.display = 'block'
+  })
+}
 
 let closePopupBtn = document.querySelector('.form__popup__close')
-closePopupBtn.addEventListener('click', () => {
-  document.querySelector('.form__popup').style.display = 'none'
-})
+if (closePopupBtn) {
+  closePopupBtn.addEventListener('click', () => {
+    document.querySelector('.form__popup').style.display = 'none'
+  })
+}
 
 // --------------- QUIZ ----------------
 let firstStepBtns = document.querySelectorAll('.quiz__fist-step .quiz__item')
@@ -130,6 +134,8 @@ playBtns.forEach(playBtn => {
 
 // ------------ STAR POPUP ----------------
 let skipBtn = document.querySelector('.star-popup__content__skip')
-skipBtn.addEventListener('click', () => {
-  document.querySelector('.wrapper__star-popup').style.display = 'none'
-})
+if (skipBtn) {
+  skipBtn.addEventListener('click', () => {
+    document.querySelector('.wrapper__star-popup').style.display = 'none'
+  })
+}
