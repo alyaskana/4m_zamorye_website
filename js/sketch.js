@@ -70,7 +70,7 @@ function getRandom(min, max) {
 }
 
 // КОНВЕЙЕР
-let speed = 1.5
+var speed = 1.5
 const linesArea = {
   width: canvasWidth,
   height: 300,
@@ -91,7 +91,7 @@ for (let i = 0; i < linesCount; i++) {
 }
 
 // ЭЛЕМЕНТЫ НА КОНВЕЙЕРЕ
-let items = []
+var items = []
 let timerId = setInterval(() => {
   if (startGame) {
     createCircles()

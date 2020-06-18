@@ -127,8 +127,12 @@ secondStepBtns.forEach(secondStepBtn => {
 let playBtns = document.querySelectorAll('.js-play-btn')
 playBtns.forEach(playBtn => {
   playBtn.addEventListener('click', () => {
-    document.querySelector('.wrapper__promo__popup').style.display = 'none'
+    document.querySelectorAll('.wrapper__promo__popup').forEach(popup => {
+      popup.style.display = 'none'
+    })
+    items = []
     startGame = true
+    speed = 1.5
   })
 })
 
