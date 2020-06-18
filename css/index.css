@@ -77,6 +77,21 @@ body.index {
   display: block;
   width: 650px;
   margin: 80px auto 0;
+  animation: 4s ease-in-out infinite coral_rotate;
+}
+
+@keyframes coral_rotate {
+  from {
+    transform: rotate(10deg);
+  }
+
+  50% {
+    transform: rotate(-10deg);
+  }
+
+  to {
+    transform: rotate(10deg);
+  }
 }
 
 .quiz__item {
@@ -138,10 +153,30 @@ body.index {
   transform: rotate(20deg);
 }
 
+.quiz__fist-step__family:hover {
+  animation: 1.6s ease-in-out infinite family_rotate;
+}
+
+@keyframes family_rotate {
+  50% {
+    transform: rotate(-20deg);
+  }
+}
+
 .quiz__fist-step__group {
   top: calc(45% / 524 * 100);
   left: calc(750% / 1440 * 100);
   transform: rotate(4deg);
+}
+
+.quiz__fist-step__group:hover {
+  animation: 1s ease-in-out infinite group_rotate;
+}
+
+@keyframes group_rotate {
+  50% {
+    transform: rotate(-10deg);
+  }
 }
 
 .quiz__fist-step__one {
@@ -150,10 +185,30 @@ body.index {
   transform: rotate(-12deg);
 }
 
+.quiz__fist-step__one:hover {
+  animation: 1.4s ease-in-out infinite one_rotate;
+}
+
+@keyframes one_rotate {
+  50% {
+    transform: rotate(12deg);
+  }
+}
+
 .quiz__second-step__excursions {
   top: calc(-10% / 524 * 100);
   left: calc(355% / 1440 * 100);
   transform: rotate(-5deg);
+}
+
+.quiz__second-step__excursions:hover {
+  animation: 1s ease-in-out infinite excursions_rotate;
+}
+
+@keyframes excursions_rotate {
+  50% {
+    transform: rotate(8deg);
+  }
 }
 
 .quiz__second-step__extreme {
@@ -162,10 +217,30 @@ body.index {
   transform: rotate(8deg);
 }
 
+.quiz__second-step__extreme:hover {
+  animation: 1s ease-in-out infinite extreme_rotate;
+}
+
+@keyframes extreme_rotate {
+  50% {
+    transform: rotate(-8deg);
+  }
+}
+
 .quiz__second-step__warm {
   top: calc(400% / 524 * 100);
   left: calc(180% / 1440 * 100);
   transform: rotate(-7deg);
+}
+
+.quiz__second-step__warm:hover {
+  animation: 1s ease-in-out infinite warm_rotate;
+}
+
+@keyframes warm_rotate {
+  50% {
+    transform: rotate(8deg);
+  }
 }
 
 .quiz__second-step__watching {
@@ -174,10 +249,30 @@ body.index {
   transform: rotate(15deg);
 }
 
+.quiz__second-step__watching:hover {
+  animation: 1.8s ease-in-out infinite watching_rotate;
+}
+
+@keyframes watching_rotate {
+  50% {
+    transform: rotate(-15deg);
+  }
+}
+
 .quiz__second-step__eating {
   top: calc(75% / 524 * 100);
   left: calc(790% / 1440 * 100);
   transform: rotate(-8deg);
+}
+
+.quiz__second-step__eating:hover {
+  animation: 1s ease-in-out infinite eating_rotate;
+}
+
+@keyframes eating_rotate {
+  50% {
+    transform: rotate(8deg);
+  }
 }
 
 /* OCEANS */
@@ -257,6 +352,11 @@ body.index {
   color: white;
 }
 
+.oceans__selector__item__content__description__btn:hover {
+  transition: background-color 0.2s;
+  background-color: var(--yellow);
+}
+
 /* FORM */
 .form {
   margin: 150px;
@@ -277,6 +377,20 @@ body.index {
   appearance: none;
   border: none;
   width: fit-content;
+}
+
+.form__input:hover {
+  animation: 1.4s ease-in-out input_rotate;
+}
+
+@keyframes input_rotate {
+  33% {
+    transform: rotate(7deg);
+  }
+
+  66% {
+    transform: rotate(-7deg);
+  }
 }
 
 .form__input::placeholder {
