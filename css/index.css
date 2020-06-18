@@ -419,6 +419,34 @@ body.index {
   cursor: pointer;
 }
 
+.form__popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid white;
+  max-width: 600px;
+  padding: 30px;
+  background-color: var(--yellow);
+}
+
+.form__popup__title {
+  font-size: 26px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.form__popup__close {
+  display: block;
+  border: 2px solid white;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
 @media (max-width: 1024px) {
   .quiz__title {
     font-size: 50px;

@@ -92,6 +92,17 @@ goBtns.forEach(goBtn => {
   })
 })
 
+// BTN SUCCESS POPUP
+let sendRequestBtn = document.querySelector('.form__btn')
+sendRequestBtn.addEventListener('click', () => {
+  document.querySelector('.form__popup').style.display = 'block'
+})
+
+let closePopupBtn = document.querySelector('.form__popup__close')
+closePopupBtn.addEventListener('click', () => {
+  document.querySelector('.form__popup').style.display = 'none'
+})
+
 // --------------- QUIZ ----------------
 let firstStepBtns = document.querySelectorAll('.quiz__fist-step .quiz__item')
 firstStepBtns.forEach(firstStepBtn => {
