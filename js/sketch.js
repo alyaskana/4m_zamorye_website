@@ -129,7 +129,7 @@ function createCircles() {
 }
 
 //   СЧЕТЧИК
-let pointCounter = 0
+var pointCounter = 0
 
 function mousePressed() {
   items.forEach((circleItem, index) => {

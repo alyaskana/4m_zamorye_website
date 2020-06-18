@@ -133,6 +133,7 @@ playBtns.forEach(playBtn => {
     items = []
     startGame = true
     speed = 1.5
+    pointCounter = 0
   })
 })
 
